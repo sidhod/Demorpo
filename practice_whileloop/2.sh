@@ -5,8 +5,8 @@ mid=$(((( $low+$high ))/2))
 
 input=0
         echo "enter 0 if num is less"
-        echo "enter 1 if num is greater"
-        echo "enter 2 if num is match"
+        echo "enter 2 if num is greater"
+        echo "enter 1 if num is match"
 
 while [[ $low -lt $high && $input -ne 1 ]]
 do
@@ -16,11 +16,11 @@ do
                 high=$mid
                 mid=$(((( $low+$high ))/2 ))
 
-        elif [[ $input -eq 1 ]]
+        elif [[ $input -eq 2 ]]
         then
                 low=$mid
                 mid=$(((( $low+$high ))/2 ))
-	elif [[ $input -eq 2 ]]
+	elif [[ $input -eq 1 ]]
 	then
 		echo "This is your Magic number $mid"
 		break;
